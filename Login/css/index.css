@@ -8,9 +8,14 @@
     background-image: url(../img/Fondo\ 4.jpg);
     color: aliceblue;
     border: none;
-    width: 1530px;
+    width: 100%;
     height: 700px;
     text-align: center;
+}
+
+#cuadro{
+    border: #1B150C;
+   
 }
 
 
