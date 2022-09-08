@@ -40,7 +40,7 @@
         <!--Vamos a crear la seccion Proyectos-->
 
         <div class="proyectos">
-            <div class="caja1">hello</div>
+            <div class="caja1"></div>
             <div class="caja2"></div>
             <div class="caja3"></div>
 
@@ -180,12 +180,37 @@
 
     }
     
-    .proyectos > div{
+    .proyectos > .caja1{
+        
+        display: block;
         color: blue;
         background-color: rgb(153, 60, 60);
         padding-top: 10px;
         width: 30%;
         height: 200px;
+        float: left;
+    }
+
+    .proyectos > .caja2{
+        display: block;
+        color: blue;
+        background-color: rgb(152, 104, 104);
+        padding-top: 10px;
+        width: 30%;
+        height: 200px;
+        float: left;
+
+    }
+
+    .proyectos > .caja3{
+        display: block;
+        color: blue;
+        background-color: rgb(255, 255, 255);
+        padding-top: 10px;
+        width: 30%;
+        height: 200px;
+        float:left;
+
     }
 
 
