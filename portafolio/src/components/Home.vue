@@ -89,9 +89,10 @@
 
     .bienvenida{
         position: absolute;
-        top: 30px;
-        background-color: #BA7B7C;
-        height: 50px;
+        top: 650px;
+        left: 20px;
+        height: 100px;
+        width: 30%;
         border: white solid 5px;
     }
 
