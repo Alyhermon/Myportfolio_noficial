@@ -16,6 +16,8 @@
 
             <!--Aqui va el cuadro de bienvenida-->
             <div class="bienvenida">
+                <h1>Bienvenido/as a mi mundo</h1>
+                <h3>Designer UI/UX And Frontend Developer</h3>
 
             </div>
 
@@ -89,11 +91,16 @@
 
     .bienvenida{
         position: absolute;
-        top: 650px;
+        top: 638px;
         left: 20px;
-        height: 100px;
-        width: 30%;
+        height: 120px;
+        width: 47%;
         border: white solid 5px;
+    }
+    
+    .bienvenida h1{
+        padding-left: 25%;
+        color: white;
     }
 
     
