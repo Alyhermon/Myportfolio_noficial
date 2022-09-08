@@ -32,7 +32,6 @@
     export default{
         data(){
             return{
-                showname: true, 
                 tasks:[
                     {task:'Inicio'},
                     {task:'Sobre mi'},
@@ -82,7 +81,7 @@
     }
 
     .img {
-        background: rgba(0,0, 0, 0.5) url('../assets/CodeImg.png') no-repeat;
+        background: rgba(0,0, 0, 0.6) url('../assets/CodeImg.png') no-repeat;
         background-size: cover;
         background-blend-mode: darken;
         height: 698.5px;
@@ -99,8 +98,18 @@
     }
     
     .bienvenida h1{
-        padding-left: 25%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        padding-left: 20%;
+        padding-top: 15px;
+        font-size: 35px;
         color: white;
+    }
+
+    .bienvenida h3{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color: gray;     
+        padding-top: 10px;
+        padding-left: 23%;
     }
 
     
