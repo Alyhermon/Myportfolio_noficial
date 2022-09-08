@@ -1,5 +1,7 @@
 <template>
     <div class="Container">
+
+        <!--Este es el campo del Header-->
         <div class="header">
 
             <!--Este es el navegador-->
@@ -13,6 +15,8 @@
 
             <!--Este es la imagen de portada-->
             <div class="img"></div>
+            <div class="grayBox"></div>
+            <div class="clearfix"></div>
 
             <!--Aqui va el cuadro de bienvenida-->
             <div class="bienvenida">
@@ -20,9 +24,20 @@
                 <h3>Designer UI/UX And Frontend Developer</h3>
 
             </div>
-
-
         </div>
+        <!--Vamos a crear el campo 'Sobre mi'-->
+
+        <div class="SobreMi">
+
+            <h1>Sobre mi</h1>
+            <hr>
+            <div class="parrafo">
+                <p>Soy una joven decidida y activa, orientada a resultados, estoy dispuesta y al mismo tiempo muy motivada de empezar y formar parte de un equipo de trabajo, contando con total disposición de aprender cada día más y al mismo tiempo dar todo de mi para lograr los mejores resultados.</p>
+
+            </div>
+        </div>
+
+        div.
     </div>
 
 
@@ -81,11 +96,27 @@
     }
 
     .img {
+        display: block;
         background: rgba(0,0, 0, 0.6) url('../assets/CodeImg.png') no-repeat;
         background-size: cover;
         background-blend-mode: darken;
         height: 698.5px;
         width: 70%;
+        float: left;
+    }
+
+    .grayBox{
+        display: block;
+        background-color: gray;
+        height: 698.5px;
+        width:30%;
+        float: left;
+
+    }
+
+    .clearfix{
+        float: none;
+        clear:both
     }
 
     .bienvenida{
@@ -111,6 +142,33 @@
         padding-top: 10px;
         padding-left: 23%;
     }
+
+    /**Sobre mi */
+
+
+    .SobreMi{
+        padding-top: 40px;
+        text-align: justify;
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .SobreMi hr{
+        background-color: blue;
+        border-bottom: blue solid 3px;
+        width: 30px;
+    }
+
+    .SobreMi p {
+        padding-top: 30px;
+        height: 150px;
+    }
+
+    /**Seccion Proyectos */
+
+
+
+
 
     
 
