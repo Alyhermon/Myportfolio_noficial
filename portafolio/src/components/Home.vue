@@ -52,6 +52,21 @@
         <div class="habilidades">
 
         </div>
+
+        <div class="contactos">
+
+            <form action="">
+                <input type="text" name="" id="" placeholder="Escriba su nombre">
+                <input type="text" name="" id="" placeholder="Escriba su correo">
+                <input type="text" name="" id="" placeholder="Escriba un mensaje">
+                <input type="submit" value="Enviar">
+            </form>
+
+        </div>
+
+        <div class="copyright">
+            <h3>2022 &COPY; Alina Marina Hermón Castro -Todos los derechos reservados</h3>
+        </div>
     </div>
 
 
@@ -163,17 +178,22 @@
     .SobreMi{
         padding-top: 40px;
         text-align: justify;
-        padding-left: 400px;
         padding-right: 400px;
     }
 
+    .SobreMi h1{
+        margin-left: 700px;
+    }
+
     .SobreMi hr{
+        margin-left: 700px;
         background-color: blue;
         border-bottom: blue solid 3px;
         width: 30px;
     }
 
     .SobreMi p {
+        padding-left: 400px;
         padding-top: 30px;
         height: 150px;
     }
@@ -184,15 +204,20 @@
     .proyectos{
         background-color: black;
         height: 450px;
-        padding-top:100px;
+        padding-top:50px;
     }
 
     .proyectos h1{
+        margin-left: 700px;
         color: white;
     }
 
     .proyectos hr{
-        width: 50px
+        background-color: blue;
+        border-bottom: blue solid 3px;
+        margin-left: 700px;
+        width: 40px;
+        margin-bottom: 20px;
     }
     
     .proyectos > .caja1{
@@ -235,7 +260,39 @@
 
     /**Habilidades */
 
-    
+    .habilidades{
+        background-color: lightcyan;
+        height: 800px;
+    }
+
+    /*Seccion Contactos */
+
+    .contactos{
+        background-color: rgb(15, 15, 167);
+        height: 700px;
+    }
+
+    input[type='submit']{
+        font-size: 100%;
+        width: 14.5em;
+        height: 40px;
+        border: none;
+        background-color: #BA7B7C;
+    }
+
+    /**Copyrigth */
+
+    .copyright{
+        background-color: black;
+        padding-top: 10px;
+        height: 40px;
+        text-align: center;
+        color: white;
+    }
+
+
+
+
 
 
 
