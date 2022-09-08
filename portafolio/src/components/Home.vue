@@ -1,13 +1,24 @@
 <template>
     <div class="Container">
         <div class="header">
+
+            <!--Este es el navegador-->
             <div class="menu">
+                <img src="../assets/Recurso 2.png" alt="Logo">
                 <ul>                
                 <a href="#"><li v-for="tareas in tasks">
                 {{tareas.task}}</li></a>
             </ul>
+            </div>
+
+            <!--Este es la imagen de portada-->
+            <div class="img"></div>
+
+            <!--Aqui va el cuadro de bienvenida-->
+            <div class="bienvenida">
 
             </div>
+
 
         </div>
     </div>
@@ -19,11 +30,6 @@
     export default{
         data(){
             return{
-                Hello: 'Hola Vue js', 
-                Usuario:{
-                    Nombre: '<h1>Alexander</h1>',
-                    Chica: 'Alina'
-                }, 
                 showname: true, 
                 tasks:[
                     {task:'Inicio'},
@@ -41,6 +47,14 @@
 </script>
 
 <style media="screen">
+
+    .header .menu img{
+        padding-top: 9px;
+        padding-left: 30px;
+        position: absolute;
+        height: 120px;
+        width: 190px;
+    }
     .header .menu{
         background-color: #BA7B7C;
         height: 90px;
@@ -48,7 +62,7 @@
     }
 
     ul{
-        padding-top: 30px;
+        padding-top: 32px;
         margin-left: 900px;
         list-style: none;
     }
@@ -63,6 +77,22 @@
 
     ul li a {
         text-align: none;
+    }
+
+    .img {
+        background: rgba(0,0, 0, 0.5) url('../assets/CodeImg.png') no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        height: 698.5px;
+        width: 70%;
+    }
+
+    .bienvenida{
+        position: absolute;
+        top: 30px;
+        background-color: #BA7B7C;
+        height: 50px;
+        border: white solid 5px;
     }
 
     
