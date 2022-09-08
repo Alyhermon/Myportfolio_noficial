@@ -40,9 +40,16 @@
         <!--Vamos a crear la seccion Proyectos-->
 
         <div class="proyectos">
+            <h1>Proyectos</h1>
+            <hr>
             <div class="caja1"></div>
             <div class="caja2"></div>
             <div class="caja3"></div>
+
+        </div>
+
+        <!--Habilidades-->
+        <div class="habilidades">
 
         </div>
     </div>
@@ -176,18 +183,27 @@
 
     .proyectos{
         background-color: black;
-        height: 1000px;
+        height: 450px;
+        padding-top:100px;
+    }
 
+    .proyectos h1{
+        color: white;
+    }
+
+    .proyectos hr{
+        width: 50px
     }
     
     .proyectos > .caja1{
-        
         display: block;
         color: blue;
         background-color: rgb(153, 60, 60);
         padding-top: 10px;
         width: 30%;
-        height: 200px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left: 4%;
         float: left;
     }
 
@@ -197,7 +213,9 @@
         background-color: rgb(152, 104, 104);
         padding-top: 10px;
         width: 30%;
-        height: 200px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left:1%;
         float: left;
 
     }
@@ -208,10 +226,18 @@
         background-color: rgb(255, 255, 255);
         padding-top: 10px;
         width: 30%;
-        height: 200px;
+        height: 300px;
+        margin-top: 30px;
+        margin-left:1%;
         float:left;
 
     }
+
+    /**Habilidades */
+
+    
+
+
 
 
 
