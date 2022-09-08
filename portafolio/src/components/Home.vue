@@ -25,7 +25,7 @@
 
             </div>
         </div>
-        <!--Vamos a crear el campo 'Sobre mi'-->
+        <!--Vamos a crear la seccion 'Sobre mi'-->
 
         <div class="SobreMi">
 
@@ -37,10 +37,12 @@
             </div>
         </div>
 
+        <!--Vamos a crear la seccion Proyectos-->
+
         <div class="proyectos">
-            <div class="caja 1"></div>
-            <div class="caja 2"></div>
-            <div class="caja 3"></div>
+            <div class="caja1">hello</div>
+            <div class="caja2"></div>
+            <div class="caja3"></div>
 
         </div>
     </div>
@@ -174,11 +176,19 @@
 
     .proyectos{
         background-color: black;
-        height: 500px;
+        height: 1000px;
 
     }
-
     
+    .proyectos > div{
+        color: blue;
+        background-color: rgb(153, 60, 60);
+        padding-top: 10px;
+        width: 30%;
+        height: 200px;
+    }
+
+
 
 
 
