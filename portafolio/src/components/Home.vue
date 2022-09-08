@@ -37,7 +37,12 @@
             </div>
         </div>
 
-        div.
+        <div class="proyectos">
+            <div class="caja 1"></div>
+            <div class="caja 2"></div>
+            <div class="caja 3"></div>
+
+        </div>
     </div>
 
 
@@ -165,6 +170,15 @@
     }
 
     /**Seccion Proyectos */
+
+
+    .proyectos{
+        background-color: black;
+        height: 500px;
+
+    }
+
+    
 
 
 
