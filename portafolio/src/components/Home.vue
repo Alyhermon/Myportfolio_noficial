@@ -56,10 +56,10 @@
         <div class="contactos">
 
             <form action="">
-                <input type="text" name="" id="" placeholder="Escriba su nombre">
-                <input type="text" name="" id="" placeholder="Escriba su correo">
-                <input type="text" name="" id="" placeholder="Escriba un mensaje">
-                <input type="submit" value="Enviar">
+                <input type="text" name="" v-model="contacts.Nombre" placeholder="Escriba su nombre" required="true">
+                <input type="text" name="" id="segundo" placeholder="Escriba su correo">
+                <input type="text" name="" id="tercero" placeholder="Escriba un mensaje">
+                <input type="submit" v-on:click="Saludar(contacts.Nombre)" value="Enviar">
             </form>
 
         </div>
@@ -76,6 +76,10 @@
     export default{
         data(){
             return{
+
+                contacts:{
+                    Nombre: ''
+                },
                 tasks:[
                     {task:'Inicio'},
                     {task:'Sobre mi'},
@@ -85,7 +89,15 @@
 
                 ]
             }
+        }, 
+        methods:{
+            Saludar(Nombre){
+                alert("Gracias " + Nombre + " Su mensaje ha sido enviado exitosamente")
+            }
+
         }
+
+        
 
     }
 
@@ -272,10 +284,41 @@
         height: 700px;
     }
 
-    input[type='submit']{
-        font-size: 100%;
-        width: 14.5em;
+    #primero {
+                position: absolute;
+        top:2600px;
+        left: 75%;
         height: 40px;
+        width: 250px;
+        float: none;
+    }
+
+    #segundo{
+        position: absolute;
+        top:2600px;
+        left: 75%;
+        height: 40px;
+        width: 300px;
+        float: none;
+    }
+
+    #tercero{
+        position: absolute;
+        top:2750px;
+        left: 75%;
+        display: inline-block;
+        height: 150px;
+        width: 300px;
+        float: none;
+    }
+
+    input[type='submit']{
+        position: absolute;
+        top: 2950px;
+        left: 75%;
+        font-size: 100%;
+        width: 305px;
+        height: 45px;
         border: none;
         background-color: #BA7B7C;
     }
@@ -289,20 +332,5 @@
         text-align: center;
         color: white;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 
 </style>
