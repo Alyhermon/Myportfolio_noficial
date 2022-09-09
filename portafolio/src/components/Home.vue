@@ -82,8 +82,7 @@
                     </ul>
                 </div>
 
-                <!--<a href="#" id="Email">Alycastro@gmail.com</a>
-                <a href="#" id="Email2">Alinahermon2@gmail.com</a>
+                <!--
                 <img src="../assets/llamada-telefonica (1).png" alt="Telefono" id="telefono"> <li>829-632-0937</li>
                 <img src="../assets/linkedin.png" alt="Linkendin" id="linkedin"> <a href="#" id="linkedinA"> Alina Marina Hermon Castro </a></a>
                 <img src="../assets/github.png" alt="Github" id="github"> <a href="#" id="githubA">Alyhermon</a>
@@ -95,7 +94,7 @@
                 <input type="text" name="" v-model="contacts.Nombre" placeholder="Escriba su nombre" required="true">
                 <input type="text" name="" id="segundo" placeholder="Escriba su correo">
                 <input type="text" name="" id="tercero" placeholder="Escriba un mensaje">
-                <input type="submit" v-on:click="Saludar(contacts.Nombre)"  value="Enviar">
+                <input type="submit" v-on:click="Saludar(contacts.Nombre, '')"  value="Enviar">
             </form>
 
             </div>
@@ -130,8 +129,14 @@
             }
         }, 
         methods:{
-            Saludar(Nombre){
-                alert("Gracias " + Nombre + " Su mensaje ha sido enviado exitosamente")
+            Saludar(Nombre, vacio = ''){
+                alert("Gracias " + Nombre + " Su mensaje ha sido enviado exitosamente");
+                if( input[type='text'] === vacio){
+                    alert('Los campos estan vacios');
+                }
+                else{
+                    alert("Puede continuar")
+                }
             }
 
         }
@@ -379,106 +384,6 @@
         color: white;   
     }
 
-
-
-    /** .contactarme #Gmail{
-        background-color: white;
-        border-radius: 20px;
-        position: absolute;
-        top: 2550px;
-        left: 26%;
-    }
-
-    .contactarme #Email{
-        position: absolute;
-        top: 2580px;
-        left: 330px;
-        color: white;
-
-    } 
-    
-    .contactarme #Email2{
-        position: absolute;
-        top: 2610px;
-        left: 315px;
-        color: white;
-
-    }
-
-
-    .contactarme #telefono{
-        background-color: white;
-        border-radius: 20px;
-        position: absolute;
-        top: 2660px;
-        left: 26%;
-
-    }
-
-    .contactarme li{
-        list-style: none;
-        position: absolute;
-        top: 2690px;
-        left: 360px;
-        color: white;
-    }
-
-
-
-    .contactarme #linkedin{
-        background-color: white;
-        border-radius: 20px;
-        position: absolute;
-        top: 2740px;
-        left: 26%;
-
-    }
-
-    .contactarme #linkedinA{
-        position: absolute;
-        top: 2770px;
-        left: 315px;
-        color: white;
-
-    }
-
-
-
-    .contactarme #github{
-        background-color: white;
-        border-radius: 20px;
-        position: absolute;
-        top: 2810px;
-        left: 26%;
-
-    }
-
-    .contactarme #githubA{
-        position: absolute;
-        top: 2840px;
-        left: 370px;
-        color: white;
-
-    }
-
-
-    .contactarme #behance{
-        background-color: white;
-        border-radius: 20px;
-        position: absolute;
-        top: 2890px;
-        left: 26%;
-
-    }
-
-    .contactarme #behanceA{
-        position: absolute;
-        top: 2915px;
-        left: 375px;
-        color: white;
-
-    }*/
-
     input[type='text'] {
         border-radius: 5px;
         border: none;
@@ -541,6 +446,10 @@
         background-color: #187AFD;
     }
 
+    input[type='submit']:hover{
+        background-color: #66a6f9;
+    }
+
     /**Copyrigth */
 
     .copyright > h3{
@@ -550,6 +459,97 @@
         height: 40px;
         text-align: center;
         color: white;
+    }
+
+
+    /**Medias */
+
+
+    @media(max-width: 340px) {
+        .header .menu img{
+        padding-top: 9px;
+        padding-left: 30px;
+        position: absolute;
+        height: 100px;
+        width: 150px;
+    }
+
+    .img {
+        display: block;
+        background: rgba(0,0, 0, 0.6) url('../assets/CodeImg.png') no-repeat;
+        background-size: cover;
+        background-blend-mode: darken;
+        margin-top: -76px;
+        height: 200px;
+        width: 70%;
+        float: left;
+    }
+
+    .grayBox{
+        display: block;
+        background-color: gray;
+        height: 200px;
+        margin-top: -76.4px;
+        width:30%;
+        float: left;
+
+    }
+
+    .bienvenida{
+        position: absolute;
+        top: 180px;
+        left: 20px;
+        height: 80px;
+        width: 40%;
+        border: white solid 2.5px;
+    }
+    
+    .bienvenida h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        padding-left: 10%;
+        padding-top: 12px;
+        font-size: 7px;
+        color: white;
+    }
+
+    .bienvenida h3{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color: gray;  
+        font-size: 10px;   
+        padding-top: 10px;
+        padding-left: 10%;
+    }
+
+    /**Responsive sobre mi */
+
+    .SobreMi{
+        background-color: #187AFD;
+        height: 200px;
+        padding-top: 40px;
+        text-align: justify;
+        padding-right: 400px;
+    }
+
+    .SobreMi h1{
+        font-size: 10px;
+        margin-left: 20px;
+    }
+
+    .SobreMi hr{
+        margin-left: 20px;
+        background-color: blue;
+        border-bottom: blue solid 3px;
+        width: 30px;
+    }
+
+    .SobreMi p {
+        padding-left: 400px;
+        padding-top: 30px;
+        height: 150px;
+    }
+
+
+        
     }
 
 </style>
