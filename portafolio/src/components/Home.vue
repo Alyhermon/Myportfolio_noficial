@@ -54,13 +54,35 @@
         </div>
 
         <div class="contactos">
+            <h1>Contactarme</h1>
+            <hr>
 
-            <form action="">
+            <!--Contactanos-->
+
+            <div class="contactarme">
+
+
+                <img src="../assets/email.png" alt="Gmail" id="Gmail">
+                <a href="#" id="Email">Alycastro@gmail.com</a>
+                <a href="#" id="Email2">Alinahermon2@gmail.com</a>
+                <img src="../assets/llamada-telefonica (1).png" alt="Telefono" id="telefono"> <li>829-632-0937</li>
+                <img src="../assets/linkedin.png" alt="Linkendin" id="linkedin"> <a href="#" id="linkedinA"> Alina Marina Hermon Castro </a></a>
+                <img src="../assets/github.png" alt="Github" id="github"> <a href="#" id="githubA">Alyhermon</a>
+                <img src="../assets/behance.png" alt="Behabce" id="behance"> <a href="#" id="behanceA">Alycastro</a>
+
+            </div>
+
+
+
+            <div class="cajaP">
+                <form action="">
                 <input type="text" name="" v-model="contacts.Nombre" placeholder="Escriba su nombre" required="true">
                 <input type="text" name="" id="segundo" placeholder="Escriba su correo">
                 <input type="text" name="" id="tercero" placeholder="Escriba un mensaje">
-                <input type="submit" v-on:click="Saludar(contacts.Nombre)" value="Enviar">
+                <input type="submit" v-on:click="Saludar(contacts.Nombre)"  value="Enviar">
             </form>
+
+            </div>
 
         </div>
 
@@ -279,48 +301,203 @@
 
     /*Seccion Contactos */
 
+    /*<div class="contactarme">
+                <h1>Contactarme</h1>
+
+                <img src="../assets/email.png" alt="Gmail">
+                <a href="#">Alycastro@gmail.com</a>
+                <a href="">Alinahermon2@gmail.com</a>
+                <img src="../assets/llamada-telefonica (1).png" alt="Telefono"> <li>829-632-0937</li>
+                <img src="../assets/linkedin.png" alt="Linkendin"> <a href="#">Alina Marina Hermon Castro</a>
+                <img src="../assets/github.png" alt="Github"> <a href="#">Alyhermon</a>
+                <img src="../assets/behance.png" alt="Github"> <a href="#">Alycastro</a>
+
+            </div>*/
+
     .contactos{
-        background-color: rgb(15, 15, 167);
-        height: 700px;
+        background-color: #1C3A63;
+        height: 650px;
+        padding-top: 60px;
     }
 
-    #primero {
-                position: absolute;
-        top:2600px;
-        left: 75%;
+    
+    .contactos h1{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -30px;
+        font-size: 50px;
+        color: white;
+        padding-left: 45%;
+    }
+
+    .contactos hr{
+
+        position: absolute;
+        left: 45%;
+        background-color: white;
+        height: 10px;
+        width: 40px;
+    }
+
+    .contactarme{
+        color: white;
+        display: block;
+        margin-left: 100px;
+        width: 40%;
+        height: 600px;
+        float: left;
+        border: 2px solid white;
+    }
+
+
+    .contactarme #Gmail{
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 2550px;
+        left: 26%;
+    }
+
+    .contactarme #Email{
+        position: absolute;
+        top: 2580px;
+        left: 330px;
+        color: white;
+
+    } 
+    
+    .contactarme #Email2{
+        position: absolute;
+        top: 2610px;
+        left: 315px;
+        color: white;
+
+    }
+
+    /**Telefono */
+
+    .contactarme #telefono{
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 2660px;
+        left: 26%;
+
+    }
+
+    .contactarme li{
+        list-style: none;
+        position: absolute;
+        top: 2690px;
+        left: 360px;
+        color: white;
+    }
+
+    /**Linkendin */
+
+    .contactarme #linkedin{
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 2740px;
+        left: 26%;
+
+    }
+
+    .contactarme #linkedinA{
+        position: absolute;
+        top: 2770px;
+        left: 315px;
+        color: white;
+
+    }
+
+
+    /*Github*/
+
+    .contactarme #github{
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 2810px;
+        left: 26%;
+
+    }
+
+    .contactarme #githubA{
+        position: absolute;
+        top: 2840px;
+        left: 370px;
+        color: white;
+
+    }
+
+    /**Behance */
+
+    .contactarme #behance{
+        background-color: white;
+        border-radius: 20px;
+        position: absolute;
+        top: 2890px;
+        left: 26%;
+
+    }
+
+    .contactarme #behanceA{
+        position: absolute;
+        top: 2915px;
+        left: 375px;
+        color: white;
+
+    }
+
+    input[type='text'] {
+        text-align:center;
+        border-radius: 5px;
+        border: none;
+        position: absolute;
+        top:2500px;
+        left: 55%;
         height: 40px;
-        width: 250px;
+        width: 600px;
         float: none;
     }
 
     #segundo{
+        border: none;
+        border-radius: 5px;
         position: absolute;
-        top:2600px;
-        left: 75%;
+        top:2570px;
+        left: 55%;
         height: 40px;
-        width: 300px;
+        width: 600px;
         float: none;
     }
 
     #tercero{
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 200px;
         position: absolute;
-        top:2750px;
-        left: 75%;
+        top:2650px;
+        left: 55%;
         display: inline-block;
-        height: 150px;
-        width: 300px;
+        height: 200px;
+        width: 600px;
         float: none;
     }
 
     input[type='submit']{
+        color: white;
+        border-radius: 5px;
         position: absolute;
-        top: 2950px;
-        left: 75%;
+        top: 2890px;
+        left: 55%;
         font-size: 100%;
-        width: 305px;
+        width: 605px;
         height: 45px;
-        border: none;
-        background-color: #BA7B7C;
+        background-color: #531ba1;
     }
 
     /**Copyrigth */
