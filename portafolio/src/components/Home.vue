@@ -534,17 +534,16 @@
         top: 2890px;
         left: 55%;
         width: 605px;
-        height: 45px;
+        height: 55px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border: none;
-        box-shadow: 0px 1px 3px white;
         font-size: 30px;
-        background-color: #531ba1;
+        background-color: #187AFD;
     }
 
     /**Copyrigth */
 
-    .copyright{
+    .copyright > h3{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: black;
         padding-top: 10px;
