@@ -27,7 +27,9 @@
         </div>
         <!--Vamos a crear la seccion 'Sobre mi'-->
 
-        <div class="SobreMi">
+        <div class="Caja">
+
+            <div class="SobreMi">
 
             <h1>Sobre mi</h1>
             <hr>
@@ -35,6 +37,7 @@
                 <p>Soy una joven decidida y activa, orientada a resultados, estoy dispuesta y al mismo tiempo muy motivada de empezar y formar parte de un equipo de trabajo, contando con total disposición de aprender cada día más y al mismo tiempo dar todo de mi para lograr los mejores resultados.</p>
 
             </div>
+        </div>
         </div>
 
         <!--Vamos a crear la seccion Proyectos-->
@@ -465,8 +468,9 @@
     /**Medias */
 
 
-    @media(max-width: 340px) {
-        .header .menu img{
+    @media(max-width: 412px) {
+    
+    .header .menu img{
         padding-top: 9px;
         padding-left: 30px;
         position: absolute;
@@ -474,12 +478,18 @@
         width: 150px;
     }
 
+    .header .menu{
+        background-color: #BA7B7C;
+        height: 80px;
+        width: 100%;
+    }
+
     .img {
         display: block;
         background: rgba(0,0, 0, 0.6) url('../assets/CodeImg.png') no-repeat;
         background-size: cover;
         background-blend-mode: darken;
-        margin-top: -76px;
+        margin-top: -86.5px;
         height: 200px;
         width: 70%;
         float: left;
@@ -489,7 +499,7 @@
         display: block;
         background-color: gray;
         height: 200px;
-        margin-top: -76.4px;
+        margin-top: -86.5px;
         width:30%;
         float: left;
 
@@ -524,15 +534,16 @@
 
     .SobreMi{
         background-color: #187AFD;
-        height: 200px;
+        width: 80%;
+        height: 150px;
         padding-top: 40px;
-        text-align: justify;
-        padding-right: 400px;
     }
 
     .SobreMi h1{
         font-size: 10px;
-        margin-left: 20px;
+        position: absolute;
+        top: 300px;
+        margin-left: 150px;
     }
 
     .SobreMi hr{
@@ -543,9 +554,60 @@
     }
 
     .SobreMi p {
-        padding-left: 400px;
+        padding-left: 10px;
         padding-top: 30px;
+        font-size: 10px;
+    }
+
+    /**Proyectos */
+
+    .proyectos{
+        background-color: black;
+        width: 100%;
+        height: 700px;
+        padding-top:50px;
+    }
+
+    .proyectos h1{
+        margin-left: 90px;
+        color: white;
+    }
+
+    .proyectos hr{
+        background-color: blue;
+        border-bottom: blue solid 3px;
+        margin-left: 90px;
+        width: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .proyectos > .caja1{
+        background-color: rgb(153, 60, 60);
+        padding-top: 10px;
+        width: 90%;
         height: 150px;
+        margin-top: 30px;
+        margin-left: 4%;
+    }
+
+    .proyectos > .caja2{
+        background-color: rgb(152, 104, 104);
+        padding-top: 10px;
+        width: 90%;
+        height: 150px;
+        margin-top: 10px;
+        margin-left:4%;
+
+    }
+
+    .proyectos > .caja3{
+        background-color: rgb(255, 255, 255);
+        padding-top: 10px;
+        width: 90%;
+        height: 150px;
+        margin-top: 10px;
+        margin-left:4%;
+
     }
 
 
