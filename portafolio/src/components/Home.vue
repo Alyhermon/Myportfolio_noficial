@@ -344,7 +344,8 @@
     .contactarme .menu ul{
         position: absolute;
         line-height: 50px;
-        margin-left: 39px;
+        top: 2500px;
+        margin-left: 15%;
         width: 250px;
     }
 
@@ -511,7 +512,7 @@
         height: 45px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border: none;
-        box-shadow: 1px 1px 3px white;
+        box-shadow: 0px 1px 3px white;
         font-size: 30px;
         background-color: #531ba1;
     }
