@@ -507,10 +507,10 @@
 
     .bienvenida{
         position: absolute;
-        top: 180px;
+        top: 200px;
         left: 20px;
-        height: 80px;
-        width: 40%;
+        height: 60px;
+        width: 60%;
         border: white solid 2.5px;
     }
     
@@ -518,15 +518,15 @@
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         padding-left: 10%;
         padding-top: 12px;
-        font-size: 7px;
+        font-size: 15px;
         color: white;
     }
 
     .bienvenida h3{
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: gray;  
         font-size: 10px;   
-        padding-top: 10px;
+        padding-top: 4px;
         padding-left: 10%;
     }
 
@@ -609,6 +609,131 @@
         margin-left:4%;
 
     }
+        /*Seccion Contactos */
+
+    .contactos{
+        background-color: #1C3A63;
+        height: 910px;
+        padding-top: 60px;
+    }
+    
+    .contactos h1{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -40px;
+        font-size: 50px;
+        color: white;
+        padding-left: 20%;
+    }
+
+    .contactos hr{
+
+        position: absolute;
+        left: 11%;
+        background-color: white;
+        height: 8px;
+        width: 60px;
+    }
+
+    .contactarme{
+        color: white;
+        display: block;
+        margin-left: 100px;
+        width: 40%;
+        height: 600px;
+        float: left;
+    }
+
+    .contactarme .menu ul{
+        position: absolute;
+        line-height: 50px;
+        top: 2150px;
+        margin-left: -20%;
+        width: 250px;
+    }
+
+    .contactarme .menu ul li a{
+        color: white;   
+    }
+
+    input[type='text'] {
+        border-radius: 5px;
+        border: none;
+        position: absolute;
+        top:2500px;
+        left: 9%;
+        height: 40px;
+        width: 320px;
+        float: none;
+    }
+
+    input[type='text']::placeholder{
+        position: absolute;
+        top: 13px;
+        left: 10px;
+    }
+
+
+    #segundo{
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        top:2570px;
+        left: 9%;
+        height: 40px;
+        width: 320px;
+        float: none;
+    }
+
+    #tercero{
+        border: none;
+        border-radius: 5px;
+        line-height: 200px;
+        text-align: left;
+        position: absolute;
+        top:2650px;
+        left: 9%;
+        height: 200px;
+        width: 320px;
+        float: none;
+    }
+
+    #tercero::placeholder{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    input[type='submit']{
+        color: white;
+        border-radius: 5px;
+        position: absolute;
+        top: 2890px;
+        left: 9%;
+        height: 60px;
+        width: 320px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        font-size: 30px;
+        background-color: #187AFD;
+    }
+
+    input[type='submit']:hover{
+        background-color: #66a6f9;
+    }
+
+    /**Copyrigth */
+
+    .copyright > h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11px;
+        background-color: black;
+        padding-top: 10px;
+        height: 25px;
+        text-align: center;
+        color: white;
+    }
+
 
 
         
