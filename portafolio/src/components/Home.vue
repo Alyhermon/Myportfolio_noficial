@@ -51,6 +51,17 @@
         <!--Habilidades-->
         <div class="habilidades">
 
+            <div class="HabilidadesProfe">
+
+                <h1 id="Profesionales">Habilidades Profesionales</h1>
+
+            </div>
+            <div class="HabilidaesPerso">
+
+                <h1>Habilidades Personales</h1>
+
+            </div>
+
         </div>
 
         <div class="contactos">
@@ -124,8 +135,6 @@
             }
 
         }
-
-        
 
     }
 
@@ -301,8 +310,25 @@
     /**Habilidades */
 
     .habilidades{
-        background-color: lightcyan;
+        background-color: rgb(255, 255, 255);
         height: 800px;
+    }
+
+    .habilidades .HabilidadesProfe{
+        background: #a4b6d0;
+        height: 400px;
+    }
+
+    .habilidades h1{
+        padding-top: 20px;
+        border: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: gray;
+        padding-left: 37%;
+    }
+
+    .habilidades #Profesionales{
+        padding-left: 35.6%;
     }
 
     /*Seccion Contactos */
@@ -466,7 +492,7 @@
 
     input[type='text']::placeholder{
         position: absolute;
-        top: 10px;
+        top: 13px;
         left: 10px;
     }
 
@@ -507,7 +533,6 @@
         position: absolute;
         top: 2890px;
         left: 55%;
-        font-size: 100%;
         width: 605px;
         height: 45px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
