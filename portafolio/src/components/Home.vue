@@ -55,23 +55,28 @@
 
         <div class="contactos">
             <h1>Contactarme</h1>
+            <br>
+            <br>
             <hr>
 
             <!--Contactanos-->
 
             <div class="contactarme">
 
+                <div class="menu">
+                    <ul>
+                        <li>Gmail: <a href="#">Alycastro1127@gmail.com</a></li>
+                        <li>Gmail: <a href="#">Alinahermon2@gmail.com</a></li>
+                        <li>Celular: 829-632-0937</li>
+                    </ul>
+                </div>
 
-                <img src="../assets/email.png" alt="Gmail" id="Gmail">
-                <a href="#" id="Email">Alycastro@gmail.com</a>
+                <!--<a href="#" id="Email">Alycastro@gmail.com</a>
                 <a href="#" id="Email2">Alinahermon2@gmail.com</a>
                 <img src="../assets/llamada-telefonica (1).png" alt="Telefono" id="telefono"> <li>829-632-0937</li>
                 <img src="../assets/linkedin.png" alt="Linkendin" id="linkedin"> <a href="#" id="linkedinA"> Alina Marina Hermon Castro </a></a>
                 <img src="../assets/github.png" alt="Github" id="github"> <a href="#" id="githubA">Alyhermon</a>
-                <img src="../assets/behance.png" alt="Behabce" id="behance"> <a href="#" id="behanceA">Alycastro</a>
-
-            </div>
-
+                <img src="../assets/behance.png" alt="Behabce" id="behance"> <a href="#" id="behanceA">Alycastro</a>-->
 
 
             <div class="cajaP">
@@ -83,6 +88,7 @@
             </form>
 
             </div>
+        </div>
 
         </div>
 
@@ -301,19 +307,6 @@
 
     /*Seccion Contactos */
 
-    /*<div class="contactarme">
-                <h1>Contactarme</h1>
-
-                <img src="../assets/email.png" alt="Gmail">
-                <a href="#">Alycastro@gmail.com</a>
-                <a href="">Alinahermon2@gmail.com</a>
-                <img src="../assets/llamada-telefonica (1).png" alt="Telefono"> <li>829-632-0937</li>
-                <img src="../assets/linkedin.png" alt="Linkendin"> <a href="#">Alina Marina Hermon Castro</a>
-                <img src="../assets/github.png" alt="Github"> <a href="#">Alyhermon</a>
-                <img src="../assets/behance.png" alt="Github"> <a href="#">Alycastro</a>
-
-            </div>*/
-
     .contactos{
         background-color: #1C3A63;
         height: 650px;
@@ -327,16 +320,16 @@
         margin: -30px;
         font-size: 50px;
         color: white;
-        padding-left: 45%;
+        padding-left: 40%;
     }
 
     .contactos hr{
 
         position: absolute;
-        left: 45%;
+        left: 38%;
         background-color: white;
-        height: 10px;
-        width: 40px;
+        height: 8px;
+        width: 60px;
     }
 
     .contactarme{
@@ -346,11 +339,22 @@
         width: 40%;
         height: 600px;
         float: left;
-        border: 2px solid white;
+    }
+
+    .contactarme .menu ul{
+        position: absolute;
+        line-height: 50px;
+        margin-left: 39px;
+        width: 250px;
+    }
+
+    .contactarme .menu ul li a{
+        color: white;   
     }
 
 
-    .contactarme #Gmail{
+
+    /** .contactarme #Gmail{
         background-color: white;
         border-radius: 20px;
         position: absolute;
@@ -374,7 +378,6 @@
 
     }
 
-    /**Telefono */
 
     .contactarme #telefono{
         background-color: white;
@@ -393,7 +396,7 @@
         color: white;
     }
 
-    /**Linkendin */
+
 
     .contactarme #linkedin{
         background-color: white;
@@ -413,7 +416,6 @@
     }
 
 
-    /*Github*/
 
     .contactarme #github{
         background-color: white;
@@ -432,7 +434,6 @@
 
     }
 
-    /**Behance */
 
     .contactarme #behance{
         background-color: white;
@@ -449,10 +450,9 @@
         left: 375px;
         color: white;
 
-    }
+    }*/
 
     input[type='text'] {
-        text-align:center;
         border-radius: 5px;
         border: none;
         position: absolute;
@@ -462,6 +462,13 @@
         width: 600px;
         float: none;
     }
+
+    input[type='text']::placeholder{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
 
     #segundo{
         border: none;
@@ -477,15 +484,20 @@
     #tercero{
         border: none;
         border-radius: 5px;
-        text-align: center;
         line-height: 200px;
+        text-align: left;
         position: absolute;
         top:2650px;
         left: 55%;
-        display: inline-block;
         height: 200px;
         width: 600px;
         float: none;
+    }
+
+    #tercero::placeholder{
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
     input[type='submit']{
@@ -497,12 +509,17 @@
         font-size: 100%;
         width: 605px;
         height: 45px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: none;
+        box-shadow: 1px 1px 3px white;
+        font-size: 30px;
         background-color: #531ba1;
     }
 
     /**Copyrigth */
 
     .copyright{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background-color: black;
         padding-top: 10px;
         height: 40px;
