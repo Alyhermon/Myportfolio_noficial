@@ -465,7 +465,7 @@
     }
 
 
-    /**Medias */
+    /**Medias queries */
 
 
     @media(max-width: 412px) {
